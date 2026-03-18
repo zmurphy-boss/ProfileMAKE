@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CommonGround Profile Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CommonGround Profile Builder</h1>
+      <p class="subtitle">Stage 1.5 — Funder Profile Extraction</p>
+    </header>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+
+      <section class="input-group">
+        <h2>File Uploads</h2>
+
+        <div class="field">
+          <label for="pdf">Annual Reports / PDFs</label>
+          <input type="file" id="pdf" name="pdf" multiple accept=".pdf">
+        </div>
+
+        <div class="field">
+          <label for="word">Word Documents (.docx)</label>
+          <input type="file" id="word" name="word" multiple accept=".docx,.doc">
+        </div>
+
+        <div class="field">
+          <label for="excel">Excel Files (.xlsx)</label>
+          <input type="file" id="excel" name="excel" multiple accept=".xlsx,.xls">
+        </div>
+
+        <div class="field">
+          <label for="image">Images</label>
+          <input type="file" id="image" name="image" multiple accept="image/*">
+        </div>
+
+        <div class="field">
+          <label for="newsletter">Newsletters (PDF or Word)</label>
+          <input type="file" id="newsletter" name="newsletter" multiple accept=".pdf,.docx,.doc">
+        </div>
+      </section>
+
+      <section class="input-group">
+        <h2>URLs</h2>
+
+        <div class="field">
+          <label for="url_website">Website URL</label>
+          <input type="url" id="url_website" name="url_website" placeholder="https://example.org">
+        </div>
+
+        <div class="field">
+          <label for="url_linkedin">LinkedIn Page URL</label>
+          <input type="url" id="url_linkedin" name="url_linkedin" placeholder="https://linkedin.com/company/...">
+        </div>
+
+        <div class="field">
+          <label for="url_x">X (Twitter) Profile URL</label>
+          <input type="url" id="url_x" name="url_x" placeholder="https://x.com/...">
+        </div>
+
+        <div class="field">
+          <label for="url_facebook">Facebook Page URL</label>
+          <input type="url" id="url_facebook" name="url_facebook" placeholder="https://facebook.com/...">
+        </div>
+
+        <div class="field">
+          <label for="url_youtube">YouTube Channel URL</label>
+          <input type="url" id="url_youtube" name="url_youtube" placeholder="https://youtube.com/...">
+        </div>
+
+        <div class="field">
+          <label for="url_article">Article URL</label>
+          <input type="url" id="url_article" name="url_article" placeholder="https://...">
+        </div>
+      </section>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Run Profile Extraction</button>
+      </div>
+
+    </form>
+
+    <div id="status" class="status hidden"></div>
+
+    <div id="results" class="results hidden">
+      <h2>Outputs</h2>
+      <ul id="outputLinks"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

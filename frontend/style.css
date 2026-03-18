@@ -1,0 +1,159 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #f4f6f8;
+  color: #222;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+header {
+  margin-bottom: 28px;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 16px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+.input-group {
+  background: #f9fafb;
+  border: 1px solid #e0e4e8;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 13px;
+}
+
+input[type="file"],
+input[type="url"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+}
+
+input[type="url"]:focus,
+input[type="file"]:focus {
+  outline: 2px solid #2c3e50;
+  border-color: #2c3e50;
+}
+
+.actions {
+  margin-top: 24px;
+  text-align: right;
+}
+
+button[type="submit"] {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #1a252f;
+}
+
+button[type="submit"]:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 24px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.status.info    { background: #e8f4fd; border-left: 4px solid #2980b9; }
+.status.success { background: #eafaf1; border-left: 4px solid #27ae60; }
+.status.error   { background: #fdf3f3; border-left: 4px solid #e74c3c; }
+
+.results {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f9fafb;
+  border: 1px solid #e0e4e8;
+  border-radius: 6px;
+}
+
+.results h2 {
+  margin-bottom: 12px;
+}
+
+#outputLinks {
+  list-style: none;
+  padding: 0;
+}
+
+#outputLinks li {
+  margin-bottom: 8px;
+}
+
+#outputLinks a {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#outputLinks a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
